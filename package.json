@@ -1,0 +1,35 @@
+{
+  "name": "@dunes/game2d",
+  "version": "0.1.1",
+  "description": "A 2D Game engine for the web",
+  "license": "MIT",
+  "type": "module",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "build": "rm -rf lib && tsc",
+    "dev": "tsc --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "coverage": "vitest run --coverage",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "javascript",
+    "linear",
+    "math"
+  ],
+  "author": "Omar <omarfkuri@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dunes-js/game2D.git"
+  },
+  "dependencies": {
+    "tslib": "^2.8.1"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^4.1.6",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.6"
+  }
+}
